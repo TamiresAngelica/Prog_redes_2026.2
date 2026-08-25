@@ -2,7 +2,7 @@ import socket
 
 cliente = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 print("Conectando ao servidor...")
-cliente.connect(("127.0.0.1", 5000))
+cliente.connect(("10.25.2.194", 5000))
 print("Cliente conectado")
 mensagem_envio = "Olá Servidor!"
 cliente.send(mensagem_envio.encode("utf-8"))
